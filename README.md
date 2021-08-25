@@ -1,0 +1,1 @@
+Este sitio web fue desarrollado con el proposito de poder informar a todas y todos sobre el medio ambiente.
