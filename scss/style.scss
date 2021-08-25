@@ -1,0 +1,36 @@
+//VARIABLES
+
+$medida-ancho: 30rem;
+$medida-largo: 30rem;
+$celestito-fondo: #e0ffff;
+$violeta: #9370d8;
+$gris: #26383B;
+$negro: #000000;
+
+@import "piso-bootstrap";
+@import "header";
+@import "menunav";
+@import "pags/index";
+@import "pags/tierra";
+@import "pags/subpags/blogs";
+@import "pags/subpags/galeria";
+@import "pags/subpags/desafios";
+@import "pags/proposito";
+@import "pags/contacto";
+@import "footer";
+@import "mediaquarry";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    background-color: $celestito-fondo;
+}
+
+
+
+

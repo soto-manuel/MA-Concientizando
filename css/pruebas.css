@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    background-color: #E0FFFF; 
+}
+
+/* Encabezado */
+
+
+nav > div > a{
+    font-size: 2rem;
+}
+
+
+
+
+/* header{
+    background-color: mediumpurple;
+    height: 8em;
+    margin: 5px;
+    position: sticky;
+    top: 5px;
+    z-index: 999;
+    grid-area: header; */
+/* 
+#h1All{
+    font-size: 4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 100;
+    position: relative;
+    top: 2rem;
+    text-align: center;
+} */
+
+
+
+
+

@@ -1,0 +1,67 @@
+.grid-tierra{
+    grid-template-areas: "header header header"
+                        "seccion seccion seccion"
+                        "articulo articulo articulo"
+                        "footer footer footer";
+}
+.cabeza-tierra{
+    grid-area: header;
+}
+.seccion__grid-parrafo{
+    grid-area: seccion;
+}
+.seccion__grid-img{
+    grid-area: articulo;
+}
+.footer__tierra{
+    grid-area: footer;
+}
+
+
+.subtitulo__h2{
+    font-size: 2.5rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    color: $gris;
+    display: inline-block;
+    position: relative;
+    left: 2rem;
+}
+
+#articulo__parrafo-tierra{
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 2rem 3rem 2rem 3rem;
+    display: inline-block;
+    text-align: center;
+    word-spacing: 0.1rem;
+    span{
+        font-weight: bold;
+    }
+}
+
+.div__cuadro-blogs{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@each $secciones in blogs, galeria, retos{
+    .#{$secciones}{
+        width: ($medida-ancho*3)+10rem;
+        height: $medida-largo/2;
+        border: solid $negro 1px;
+        transition: all 1s;    
+        margin: 15px 0px 15px 0px;
+    &:hover{
+        transform: scale(1.05);
+    }
+    }
+}
+

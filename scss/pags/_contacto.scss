@@ -1,0 +1,127 @@
+.gridContacto{
+    display: grid;
+    grid-template-areas: "header header header"
+                        "formulario formulario formulario"
+                        "footer footer footer";
+    > header{
+        grid-area: header;
+    }
+    > section{
+        grid-area: formulario;
+    padding: 10px;;
+    text-align: center;
+    align-content: center;
+    }
+    > footer{
+        grid-area: footer;
+    }
+}
+
+   // FIN DEL gridCONTACTO
+
+
+.subtitulo__contacto-principal{   //h2Contacto
+    font-size: 2.5rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+    color: $gris;
+    display: inline-block;
+}
+
+.seccion__form-contacto{   //formContacto
+    background-image: linear-gradient(to bottom, $violeta, purple);
+    margin: 2rem 30rem 2rem 30rem;
+    height: $medida-largo*1.5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border-radius: 1rem;
+    input{
+        display: inline-block;
+    }
+    label{
+        display: inline;
+        font-size: 1.5rem;
+    }
+    select{
+        font-size: 1.5rem;
+    }
+}
+
+#nombreApellido{
+    font-size: 1.5rem;
+}
+
+.apellidoNombreLabel{
+    align-self: center;
+}
+
+#correoElectronico{
+    position: relative;
+    left: 0.5rem;
+    border-style: solid;
+    height: 2.5rem;
+    width: ($medida-ancho)-0.1rem;
+    border-radius: 0.2rem;
+}
+
+.correoElectronicoLabel{
+    align-self: center;
+}
+
+#telefono{
+    position: relative;
+    left: 0.5rem;
+    border-style: solid;
+    height: 2.5rem;
+    width: ($medida-ancho)-0.1rem;
+    border-radius: 0.2rem;
+}
+
+.telefonoLabel{
+    align-self: center;
+}
+
+#genero{
+    border-style: solid;
+    height: 3rem;
+    width: ($medida-ancho)-0.1rem;
+    border-radius: 0.2rem;
+}
+
+.generoLabel{
+    align-self: center;
+}
+
+.especifiqueLabel{
+    height: 1rem;
+}
+
+#resetear{
+    position: relative;
+    left: 6.5rem;
+    top: 3.4rem;
+    border-style: solid;
+    width: 10rem;
+    height: 3.5rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    margin: 0.5rem 0.1rem 0.5rem 0rem;
+}
+
+#enviar{
+    position: relative;
+    left: 17rem;
+    bottom: 1.1rem;
+    border-style: solid;
+    width: 8rem;
+    height: 3.5rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    margin: 0.5rem 0.1rem 0.5rem 0rem;
+}

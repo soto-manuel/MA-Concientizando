@@ -1,0 +1,24 @@
+.seccion__desafios{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+@each $desafios in desafio-1, desafio-2, desafio-3 {
+    .#{$desafios}{
+        width: ($medida-ancho);
+        height: ($medida-largo)+5rem;
+        margin: 0px 10px 15px 10px;
+        transition: all 1s;
+        &:hover{
+            width: ($medida-ancho)+2rem;
+            height: ($medida-largo)+6rem;
+        }
+    }
+}
+
+@for $x from 1 through 3{
+    .desafio-#{$x}{border: 1px solid $negro;}
+}

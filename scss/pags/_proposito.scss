@@ -1,0 +1,42 @@
+
+.subtitulo__h2-proposito{
+    display: inline;
+    font-size: 2.5rem;
+    margin: 0rem 0.5rem 0rem 0rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+    color: $gris;
+    transform: translate(2rem, 0rem);
+}
+
+.articulo__parrafos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.parrafo-azul{
+    font-size: 2rem;
+    margin: 1rem 1rem 1rem 1.5rem;
+    padding: 0.5rem;
+    width: $medida-ancho*2;
+    height: ($medida-largo)-14rem;
+    background-color: lightblue;
+    border-radius: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transform: translate(10rem, 1rem);
+}
+
+.parrafo-rosita{
+    @extend .parrafo-azul;
+    background-color: lightcoral;
+    align-self: flex-end;
+    transform: translate(-10rem, 1rem);
+}
+
+.parrafo-verde{
+    @extend .parrafo-azul;
+    background-color: lightgreen;
+}

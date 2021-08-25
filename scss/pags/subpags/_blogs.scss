@@ -1,0 +1,46 @@
+.body__blogs-grid{    //bodyBlogs
+    display: grid;
+    grid-template-areas:"header header "
+                        "article article"
+                        "blogs aside"
+                        "footer footer ";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 0fr 0.5fr 2fr 0fr;
+    > header{
+        grid-area: header;
+    }
+    > footer{
+        grid-area: footer;
+    }
+}
+
+.seccionBlogs{
+    grid-area: blogs;
+    > a{
+        > div{
+            text-align: center;
+            height: 15rem;
+            font-size: 2rem;
+            border: $negro 1px solid;
+            margin: 10px 4px 10px 15px;
+            transition: all 1s;
+            &:hover{
+                transform: scale(1.02);
+            }
+        }
+    }
+}
+
+.articulo__blogs-all{   //articuloBlogs
+    text-align: center;
+    grid-area: article;
+    font-size: 2rem;
+    margin: 10px 15px 10px 15px;
+    background-image: linear-gradient(to right, rgb(62, 141, 88), rgb(26, 128, 17));
+}
+
+.aside__lateral-D{    //lateralB
+    grid-area: aside;
+    background-color: #b262ca;
+    margin: 10px 15px 10px 15px;
+}

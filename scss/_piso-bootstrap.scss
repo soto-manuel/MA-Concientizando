@@ -1,0 +1,15 @@
+@each $btn in btn-primary, btn-secondary{
+    .#{$btn}{
+        color: white;
+        border-radius: 2px;
+    }
+}
+
+.btn-primary{
+    background-color: blue;
+}
+.btn-secondary{
+    background-color: $gris;
+}
+
+

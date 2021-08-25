@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="Español">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aqui podrás poner tus datos para poder comunicarte con el desarrollador del sitio web.">
+    <title>Contacto | Concientizando - MA</title>
+    <meta name="keywords" content="CONTACTO, MEDIO DE CONTACTO, FORMULARIO, COMUNICACION">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="gridContacto">
+        
+    <header id="headerContacto">
+        <h1 id="header__h1">Concientizando MA</h1>
+        <div><hr id="hrSeparador"></div>
+        <nav class="menu">
+            <ul>
+                <li><a class="menuInicio" href="../index.html">Inicio<img src="../imagen/homeICO.svg" class="rounded-circle" alt="Inicio"></a></li>
+                <li><a class="menuTierra" href="./tierra.html">Tierra<img src="../imagen/tierraICO.png" class="rounded-circle" alt="Tierra"></a></li>
+                <li><a class="menuProposito" href="./proposito.html">Proposito<img src="../imagen/propositoICO.svg" class="rounded-circle"></a></li>
+                <li><a class="menuContacto" href="./contacto.html">Contacto<img src="../imagen/contactICO.png" class="rounded-circle" alt="Contacto"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+                <h2 class="subtitulo__contacto-principal">CONTACTO</h2>
+            <form class="seccion__form-contacto" enctype="application/x-www-form-urlencoded" action="" method="GET">
+                
+                <div class="form-floating mb-3">
+                    <input id="floatingNombre nombreApellido" class="form-control" name="nombreApellido" type="text" placeholder="Roberto Carlos Torres">
+                    <label class="apellidoNombreLabel" for="floatingNombre nombreApellido">Nombre completo</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input id="correoElectronico floatingInput" class="form-control" name="correoElectronico" type="email" placeholder="nombre@ejemplo.com">
+                    <label class="correoElectronicoLabel" for="floatingInput correoElectrónico">Correo electrónico</label> 
+                </div>
+                
+                <div class="form-floating mb-3">
+                    <input id="telefono floatingPassword" class="form-control" name="telefono" type="tel" placeholder="2218032656"> 
+                    <label class="telefonoLabel" for="telefeno floatingPassword">Telefono</label>
+                </div>
+
+                <select class="form-select select-lg mb-3" aria-label=".form-select-lg example" name="genero" id="genero">
+                    <option selected>Seleccione su género</option>
+                    <option value="F">Femenino</option>
+                    <option value="M">Masculino</option>
+                    <option value="O">Otro</option>
+                </select>
+
+                <div class="form-floating">
+                    <input id="floatingInput especificar" class="form-control" name="especificar" type="text" placeholder="Especifique">
+                    <label class="especifiqueLabel" for="floatingInput especificar">Especificar</label>
+                </div>
+            
+                <button type="button" class="btn btn-lg btn-secondary" id="resetear" type="reset">Reestablecer</button>
+                <button type="button" class="btn btn-primary btn-lg" id="enviar" type="submit">Enviar</button>
+            </form>
+        </section>
+    
+    <footer>
+            <img class="footer__img" src="../imagen/icoArbol.ico" alt="Arbolito">
+            <h3 class="titulo-footer-nav">Navegación</h3>
+                <h3 class="titulo-footer-int">Interés</h3>
+            <nav class="menu__footer">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./tierra.html">Tierra</a></li>
+                    <li><a href="./proposito.html">Proposito</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <nav class="menu__footer-segundo">
+                <ul>
+                    <li><a href="./subpags/blogs.html">Blogs</a></li>
+                    <li><a href="./subpags/galeria.html">Galeria de fotos</a></li>
+                    <li><a href="./subpags/desafios.html">Desafíos</a></li>
+                </ul>
+            </nav>
+    </footer>
+
+    <script src="../js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

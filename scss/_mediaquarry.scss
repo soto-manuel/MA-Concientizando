@@ -1,0 +1,163 @@
+@media screen and (min-width: 480px) and (max-width: 768px){
+    
+    //////        INICIO/HOME 
+    
+    .cuerpoIndex{
+            display: grid;
+            grid-template-areas:"header"
+                                "seccion"
+                                "costado"
+                                "seccion2"
+                                "footer";
+        }
+        .cabeza{
+            grid-area: header;
+        }
+        .seccion{
+            grid-area: seccion;
+        }
+        .costado{
+            grid-area: costado;
+        }
+        .seccion2{
+            grid-area: seccion2;
+        }
+        #piePagina{
+            grid-area: footer;
+        }
+
+// fin del grid
+
+    .menu{
+        ul{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            li{
+                width: 25%;
+            }
+        }
+    }
+    
+    .h2Index{
+        position: relative;
+        left: 10rem;
+    }
+    #hrSeparador{
+        margin: 1rem 5rem;
+    }
+    #seccionUno{
+        justify-self: center;
+        width: 58rem;
+        position: relative;
+        left: 0rem;
+    }
+    .costado{
+        justify-self: center;
+        top: 2rem;
+        height: 37rem;
+    }   
+    .seccion2{
+        justify-content: center;
+    }
+    .seccion2__parrafo-ult{
+        font-size: 1.7rem;
+        text-align: center;
+        margin: 0rem 2rem 1rem 2rem;
+        padding: 0;
+    }
+
+////// FIN INICIO/HOME
+
+
+////// TIERRA
+
+    .grid-tierra{
+        display: grid;
+        grid-template-areas: "header"
+                            "seccion"
+                            "articulo"
+                            "footer";
+        }
+        .cabeza-tierra{
+            grid-area: header;
+            .menu{
+                ul{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    li{
+                        width: 25%;
+                    }
+                }
+            }
+        }
+        .seccion__grid-parrafo{
+            grid-area: seccion;
+        }
+        .seccion__grid-img{
+            grid-area: articulo;
+        }
+        .footer__tierra{
+            grid-area: footer; 
+        }
+
+
+
+
+
+
+
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .cuerpoIndex{
+        display: grid;
+        grid-template-areas:"header header header"
+                            "seccion seccion costado"
+                            "seccion2 seccion2 seccion2"
+                            "footer footer footer";
+    }
+    .cabeza{
+        grid-area: header;
+    }
+    .seccion{
+        grid-area: seccion;
+    }
+    .costado{
+        grid-area: costado;
+    }
+    .seccion2{
+        grid-area: seccion2;
+    }
+    #piePagina{
+        grid-area: footer;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width: 1200px){
+    .cuerpoIndex{
+        display: grid;
+        grid-template-areas:"header header header"
+                            "seccion seccion costado"
+                            "seccion2 seccion2 seccion2"
+                            "footer footer footer";
+    }
+    .cabeza{
+        grid-area: header;
+    }
+    .seccion{
+        grid-area: seccion;
+    }
+    .costado{
+        grid-area: costado;
+    }
+    .seccion2{
+        grid-area: seccion2;
+    }
+    #piePagina{
+        grid-area: footer;
+    }
+
+}
