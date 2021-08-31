@@ -11,7 +11,7 @@
                                 "footer";
         }
         .cabeza{
-            grid-area: header;
+            grid-area: header;;
         }
         .seccion{
             grid-area: seccion;
@@ -27,6 +27,11 @@
         }
 
 // fin del grid
+
+
+    #header__h1{
+        width: 100%;
+    }
 
     .menu{
         ul{
@@ -69,6 +74,42 @@
 
 ////// FIN INICIO/HOME
 
+    footer{
+        height: 40rem;
+    }
+
+    .footer__img{
+        left: 0;
+        top: 0;
+        transform: translate(5rem, 6rem);
+    }
+
+    .titulo-footer-nav{
+        height: 20%;
+        right: 20rem;
+        top: 10rem;
+    }
+
+    .titulo-footer-int{
+        bottom: 4rem;
+        left: 16rem;
+        
+    }
+    .menu__footer{
+        height: 25%;
+        right: 18rem;
+        top: 10rem;
+    }
+    .menu__footer-segundo{
+        width: 20%;
+        height: 20%;
+        left: 45.5rem;
+        bottom: 3rem;
+    }
+
+    .autor-derechos{
+        top: 12.5rem;
+    }
 
 ////// TIERRA
 
