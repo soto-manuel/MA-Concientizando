@@ -9,6 +9,9 @@ header{
     text-align: center;
     height: 10rem;
     padding: 0.5rem;
-    list-style-type: none;
-    text-decoration: none;
+    a{
+        list-style-type: none;
+        text-decoration: none;
+        color: black;
+    }
 }

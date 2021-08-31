@@ -28,8 +28,12 @@ header {
   text-align: center;
   height: 10rem;
   padding: 0.5rem;
+}
+
+#header__h1 a {
   list-style-type: none;
   text-decoration: none;
+  color: black;
 }
 
 .menu {
@@ -1086,6 +1090,6 @@ footer {
 
 html {
   font-size: 10px;
-  background-color: #e0ffff;
+  background-color: #fff6ab;
 }
 /*# sourceMappingURL=style.css.map */
