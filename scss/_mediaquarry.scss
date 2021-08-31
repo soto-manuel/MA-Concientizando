@@ -29,10 +29,6 @@
 // fin del grid
 
 
-    #header__h1{
-        width: 100%;
-    }
-
     .menu{
         ul{
             display: flex;
@@ -71,6 +67,9 @@
         margin: 0rem 2rem 1rem 2rem;
         padding: 0;
     }
+    .seccion2__gif-index{
+        width: 70rem;
+    }
 
 ////// FIN INICIO/HOME
 
@@ -80,35 +79,33 @@
 
     .footer__img{
         left: 0;
-        top: 0;
-        transform: translate(5rem, 6rem);
+        top: 7rem;
     }
 
     .titulo-footer-nav{
         height: 20%;
-        right: 20rem;
-        top: 10rem;
+        left: 10rem;
+        top: 3rem;
     }
 
     .titulo-footer-int{
-        bottom: 4rem;
-        left: 16rem;
+        bottom: 10.249rem;
+        left: 46rem;
         
     }
     .menu__footer{
         height: 25%;
-        right: 18rem;
-        top: 10rem;
+        left: 10rem;
+        top: 4rem;
     }
     .menu__footer-segundo{
-        width: 20%;
-        height: 20%;
-        left: 45.5rem;
-        bottom: 3rem;
+        left: 46rem;
+        bottom: 9rem;
     }
 
     .autor-derechos{
-        top: 12.5rem;
+        position: relative;
+        top: 10rem;
     }
 
 ////// TIERRA
@@ -143,8 +140,37 @@
             grid-area: footer; 
         }
 
+        .blogs{
+            width: 70rem;
+        }
+        .galeria{
+            width: 70rem;
+        }
+        .retos{
+            width: 70rem;
+        }
 
+///////PROPOSITO
 
+.grid-proposito{
+    display: grid;
+    grid-template-areas: "header"
+    "seccion"
+    "footer";
+    header{
+        grid-area: header;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+.seccion_proposito-unica{
+    grid-area: seccion;
+}
+
+.parrafo-azul, .parrafo-rosita, .parrafo-verde{
+    width: 35rem;
+}
 
 
 
@@ -175,6 +201,40 @@
     #piePagina{
         grid-area: footer;
     }
+
+    .grid-tierra{
+        display: grid;
+        grid-template-areas: "header header"
+                            "seccion seccion"
+                            "articulo articulo"
+                            "footer footer";
+        }
+        .cabeza-tierra{
+            grid-area: header;
+            .menu{
+                ul{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    li{
+                        width: 25%;
+                    }
+                }
+            }
+        }
+        .seccion__grid-parrafo{
+            grid-area: seccion;
+        }
+        .seccion__grid-img{
+            grid-area: articulo;
+        }
+        .footer__tierra{
+            grid-area: footer; 
+        }
+
+
+
+
 }
 
 @media screen and (min-width:993px) and (max-width: 1200px){
@@ -200,5 +260,39 @@
     #piePagina{
         grid-area: footer;
     }
+
+
+
+    .grid-tierra{
+        display: grid;
+        grid-template-areas: "header header header"
+                            "seccion seccion header"
+                            "articulo articulo articulo"
+                            "footer footer footer";
+        }
+        .cabeza-tierra{
+            grid-area: header;
+            .menu{
+                ul{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    li{
+                        width: 25%;
+                    }
+                }
+            }
+        }
+        .seccion__grid-parrafo{
+            grid-area: seccion;
+        }
+        .seccion__grid-img{
+            grid-area: articulo;
+        }
+        .footer__tierra{
+            grid-area: footer; 
+        }
+
+
 
 }
