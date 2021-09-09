@@ -18,6 +18,8 @@ $crema: #fff6ab;
 @import "pags/index";
 @import "pags/tierra";
 @import "pags/subpags/blogs";
+@import "pags/subpags/blogspot/problemas-con-el-plastico";
+@import "pags/subpags/blogspot/el-cambio-es-ahora";
 @import "pags/subpags/galeria";
 @import "pags/subpags/desafios";
 @import "pags/proposito";
@@ -33,13 +35,13 @@ $crema: #fff6ab;
 
 html{
     font-size: 10px;
-    background-color: $celestito-fondo;
+    background-color: $crema;
 }
 
 #hr-separador{
     height: 1px;
     width: 90%;
-    margin: 1rem 10rem;
+    margin: 1rem 6rem;
     opacity: 0.25;
     background-color: $gris;
 }

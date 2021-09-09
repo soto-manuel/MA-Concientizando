@@ -2,7 +2,6 @@ footer{
     background-color: $violeta;
     height: 30rem;
     text-align: center;
-    margin: 5px;
     grid-area: footer;
 }
 
@@ -36,7 +35,7 @@ footer{
 }
 
 .titulo-footer-nav{
-    color: $negro;
+    color: white;
     display: inline;
     position: relative;
     top: 2rem;
@@ -44,7 +43,7 @@ footer{
     font-weight: bold;
 }
 .titulo-footer-int{
-    color: $negro;
+    color: white;
     display: inline;
     position: relative;
     left: 45rem;
@@ -79,8 +78,10 @@ footer{
 }
 
 .autor-derechos{
+    background-color: gray;
     font-size: 1.4rem;
     font-weight: bold;
+    height: 2.5rem;
 }
 
 @each $contenedor in contenedor-footer-uno, contenedor-footer-dos {
