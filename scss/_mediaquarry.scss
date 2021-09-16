@@ -1,4 +1,4 @@
-@media screen and (min-width: 480px) and (max-width: 768px){
+@media screen and (min-width: 440px) and (max-width: 768px){
     
     //////        INICIO/HOME 
     
@@ -8,6 +8,8 @@
                                 "seccion"
                                 "costado"
                                 "seccion2"
+                                "seccion3"
+                                "seccion4"
                                 "footer";
         }
         .cabeza{
@@ -181,10 +183,12 @@
 @media screen and (min-width: 769px) and (max-width: 992px) {
     .cuerpoIndex{
         display: grid;
-        grid-template-areas:"header header header"
-                            "seccion seccion costado"
-                            "seccion2 seccion2 seccion2"
-                            "footer footer footer";
+    grid-template-areas:"header header"
+                        "seccion seccion"
+                        "seccion2 costado"
+                        "seccion3 seccion3"
+                        "seccion4 seccion4"
+                        "footer footer";
     }
     .cabeza{
         grid-area: header;
@@ -197,6 +201,12 @@
     }
     .seccion2{
         grid-area: seccion2;
+    }
+    .seccion3{
+        grid-area: seccion3;
+    }
+    .seccion4{
+        grid-area: seccion4;
     }
     #piePagina{
         grid-area: footer;
@@ -237,13 +247,15 @@
 
 }
 
-@media screen and (min-width:993px) and (max-width: 1200px){
+@media screen and (min-width:993px) and (max-width: 1300px){
     .cuerpoIndex{
         display: grid;
-        grid-template-areas:"header header header"
-                            "seccion seccion costado"
-                            "seccion2 seccion2 seccion2"
-                            "footer footer footer";
+    grid-template-areas:"header header header"
+                        "seccion seccion seccion"
+                        "seccion2 seccion2 costado"
+                        "seccion3 seccion3 seccion3"
+                        "seccion4 seccion4 seccion4"
+                        "footer footer footer";
     }
     .cabeza{
         grid-area: header;
@@ -257,10 +269,15 @@
     .seccion2{
         grid-area: seccion2;
     }
+    .seccion3{
+        grid-area: seccion3;
+    }
+    .seccion4{
+        grid-area: seccion4;
+    }
     #piePagina{
         grid-area: footer;
     }
-
 
 
     .grid-tierra{

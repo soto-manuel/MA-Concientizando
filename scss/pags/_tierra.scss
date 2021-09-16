@@ -56,7 +56,6 @@
     .#{$secciones}{
         width: ($medida-ancho*3)+10rem;
         height: $medida-largo/2;
-        border: solid $negro 1px;
         transition: all 1s;    
         margin: 15px 0px 15px 0px;
     &:hover{
