@@ -531,6 +531,35 @@ ol li {
   list-style: disc;
 }
 
+.blog-tres {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0rem 15rem 2rem;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+.blog-tres h2 {
+  font-size: 3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 2rem 0rem;
+}
+.blog-tres h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem 0rem;
+}
+.blog-tres p {
+  margin: 1rem 0rem;
+  text-align: justify;
+}
+
+.aproved {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+}
+
 #bodyGaleria {
   display: grid;
   grid-template-areas: "header header" "articulo articulo" "section section" "footer footer";
@@ -799,7 +828,6 @@ ol li {
 
 footer {
   background-color: #9370d8;
-  height: 30rem;
   text-align: center;
   grid-area: footer;
 }
@@ -813,9 +841,9 @@ footer {
 .menu__footer {
   font-size: 1.5rem;
   display: inline;
-  position: relative;
-  left: 14.9rem;
-  top: 2.2rem;
+}
+.menu__footer ul {
+  margin-top: 1rem;
 }
 .menu__footer ul li {
   list-style-type: none;
@@ -832,34 +860,25 @@ footer {
 .titulo-footer-nav {
   color: white;
   display: inline;
-  position: relative;
-  top: 2rem;
-  left: 15rem;
   font-weight: bold;
 }
 
 .titulo-footer-int {
   color: white;
   display: inline;
-  position: relative;
-  left: 45rem;
-  bottom: 11.4rem;
   font-weight: bold;
 }
 
 .menu__footer-segundo {
   width: auto;
   font-size: 1.5rem;
-  position: relative;
-  left: 45rem;
-  bottom: 11rem;
 }
 .menu__footer-segundo ul li {
   list-style-type: none;
   margin: 3px 0px 3px 0px;
 }
 .menu__footer-segundo ul li a {
-  color: #3c118d;
+  color: #5900ff;
   text-decoration: none;
 }
 .menu__footer-segundo ul li a:hover {
@@ -884,6 +903,36 @@ footer {
 
 .contenedor-footer-dos {
   width: 15rem;
+}
+
+.contenedor-footer-tres {
+  width: 15rem;
+}
+
+.contenedor-footer-uno {
+  position: relative;
+  top: 1.7rem;
+  left: 10rem;
+}
+
+.contenedor-footer-dos {
+  position: relative;
+  bottom: 12rem;
+  left: 35rem;
+}
+
+.contenedor-footer-tres {
+  position: relative;
+  bottom: 15rem;
+  left: 60rem;
+}
+
+.redes-sociales_footer a {
+  margin: 0rem 0.4rem;
+  border-radius: 5px;
+}
+.redes-sociales_footer a:hover {
+  color: blue;
 }
 
 @media screen and (min-width: 440px) and (max-width: 768px) {
