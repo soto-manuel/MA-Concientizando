@@ -1,6 +1,6 @@
 @media screen and (min-width: 440px) and (max-width: 768px){
     
-    //////        INICIO/HOME 
+    //////        INICIO/HOME
     
     .cuerpoIndex{
             display: grid;
@@ -31,15 +31,17 @@
 // fin del grid
 
 
-    .menu{
-        ul{
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            li{
-                width: 25%;
-            }
-        }
+    .menuInicio img{
+        transform: scale(0);
+    }
+    .menuTierra img{
+        transform: scale(0);
+    }
+    .menuProposito img{
+        transform: scale(0);
+    }
+    .menuContacto img{
+        transform: scale(0);
     }
     
     .h2Index{
@@ -221,16 +223,6 @@
         }
         .cabeza-tierra{
             grid-area: header;
-            .menu{
-                ul{
-                    display: flex;
-                    flex-flow: row nowrap;
-                    justify-content: center;
-                    li{
-                        width: 25%;
-                    }
-                }
-            }
         }
         .seccion__grid-parrafo{
             grid-area: seccion;
@@ -240,6 +232,19 @@
         }
         .footer__tierra{
             grid-area: footer; 
+        }
+
+        .menuInicio img{
+            transform: scale(0);
+        }
+        .menuTierra img{
+            @extend .menuInicioimg;
+        }
+        .menuProposito img{
+            @extend .menuInicioimg;
+        }
+        .menuContacto img{
+            @extend .menuInicioimg;
         }
 
 
