@@ -18,58 +18,62 @@
 
         <nav class="navbar navbar-expand-lg bg-white">
             <div class="container justify-content-end">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-                <div class="navbar-nav justify-content-center w-100">
-                  <a class="nav-link menuInicio" aria-current="page" href="../index.html"><img src="../imagen/homeICO.svg" class="" alt="Inicio"> Inicio</a>
-                  <a class="nav-link menuTierra" href="./tierra.html"><img src="../imagen/tierraICO.png" alt="Tierra" class="rounded-circle"> Tierra</a>
-                  <a class="nav-link menuProposito" href="./proposito.html"><img src="../imagen/propositoICO.svg" class="rounded-circle" alt="Proposito"> Propósito</a>
-                  <a class="nav-link menuContacto" href="./contacto.html"><img src="../imagen/contactICO.png" class="" alt="Contacto"> Contacto</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                    <div class="navbar-nav justify-content-center w-100">
+                        <a class="nav-link menuInicio" aria-current="page" href="../index.html"><img src="../imagen/homeICO.svg" class="" alt="Inicio"> Inicio</a>
+                        <a class="nav-link menuTierra" href="./tierra.html"><img src="../imagen/tierraICO.png" alt="Tierra" class="rounded-circle"> Tierra</a>
+                        <a class="nav-link menuProposito" href="./proposito.html"><img src="../imagen/propositoICO.svg" class="rounded-circle" alt="Proposito"> Propósito</a>
+                        <a class="nav-link menuContacto" href="./contacto.html"><img src="../imagen/contactICO.png" class="" alt="Contacto"> Contacto</a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </nav>
+        </nav>
     
     </header>
 
+    <article>
+            <h2 class="subtitulo__contacto-principal">CONTACTO</h2>
+    </article>
+
     <!-- FORMULARIO -->
     <section>
-                <h2 class="subtitulo__contacto-principal">CONTACTO</h2>
-            <form class="seccion__form-contacto" enctype="application/x-www-form-urlencoded" action="" method="GET">
+        <p id="descripcion-contacto">Para comunicarse con nosotros, por favor llenar el siguiente formulario:</p>
+        <form class="seccion__form-contacto" enctype="application/x-www-form-urlencoded" action="" method="GET">
                 
-                <div class="form-floating mb-3">
-                    <input id="floatingNombre nombreApellido" class="form-control" name="nombreApellido" type="text" placeholder="Roberto Carlos Torres">
-                    <label class="apellidoNombreLabel" for="floatingNombre nombreApellido">Nombre completo</label>
-                </div>
+            <div class="form-floating mb-3">
+                <input id="floatingNombre nombreApellido" class="form-control" name="nombreApellido" type="text" placeholder="Roberto Carlos Torres">
+                <label class="apellidoNombreLabel" for="floatingNombre nombreApellido">Nombre completo</label>
+            </div>
 
-                <div class="form-floating mb-3">
-                    <input id="correoElectronico floatingInput" class="form-control" name="correoElectronico" type="email" placeholder="nombre@ejemplo.com">
-                    <label class="correoElectronicoLabel" for="floatingInput correoElectrónico">Correo electrónico</label> 
-                </div>
+            <div class="form-floating mb-3">
+                <input id="correoElectronico floatingInput" class="form-control" name="correoElectronico" type="email" placeholder="nombre@ejemplo.com">
+                <label class="correoElectronicoLabel" for="floatingInput correoElectrónico">Correo electrónico</label> 
+            </div>
                 
-                <div class="form-floating mb-3">
-                    <input id="telefono floatingPassword" class="form-control" name="telefono" type="tel" placeholder="2218032656"> 
-                    <label class="telefonoLabel" for="telefeno floatingPassword">Telefono</label>
-                </div>
+            <div class="form-floating mb-3">
+                <input id="telefono floatingPassword" class="form-control" name="telefono" type="tel" placeholder="2218032656"> 
+                <label class="telefonoLabel" for="telefeno floatingPassword">Telefono</label>
+            </div>
 
-                <select class="form-select select-lg mb-3" aria-label=".form-select-lg example" name="genero" id="genero">
-                    <option selected>Seleccione su género</option>
-                    <option value="F">Femenino</option>
-                    <option value="M">Masculino</option>
-                    <option value="O">Otro</option>
-                </select>
+            <select class="form-select select-lg mb-3" aria-label=".form-select-lg example" name="genero" id="genero">
+                <option selected>Seleccione su género:</option>
+                <option value="F">Femenino</option>
+                <option value="M">Masculino</option>
+                <option value="O">Otro</option>
+            </select>
 
-                <div class="form-floating">
-                    <input id="floatingInput especificar" class="form-control" name="especificar" type="text" placeholder="Especifique">
-                    <label class="especifiqueLabel" for="floatingInput especificar">Especificar</label>
-                </div>
+            <div class="form-floating">
+                <input id="floatingInput especificar" class="form-control" name="especificar" type="text" placeholder="Especifique">
+                <label class="especifiqueLabel" for="floatingInput especificar">Especificar</label>
+            </div>
             
-                <button type="button" class="btn btn-lg btn-secondary" id="resetear" type="reset">Reestablecer</button>
-                <button type="button" class="btn btn-primary btn-lg" id="enviar" type="submit">Enviar</button>
-            </form>
-        </section>
+            <button type="button" class="btn btn-lg btn-secondary" id="resetear" type="reset">Reestablecer</button>
+            <button type="button" class="btn btn-primary btn-lg" id="enviar" type="submit">Enviar</button>
+        </form>
+    </section>
     
         <!-- PIE DE PAGINA -->
     <footer>

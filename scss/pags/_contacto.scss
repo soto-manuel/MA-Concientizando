@@ -1,39 +1,53 @@
 .gridContacto{
     display: grid;
     grid-template-areas: "header header header"
+                        "descripcion descripcion descripcion"
                         "formulario formulario formulario"
                         "footer footer footer";
-    > header{
+    header{
         grid-area: header;
     }
-    > section{
+    article{
+        grid-area: descripcion;
+        text-align: center;
+    }
+    section{
         grid-area: formulario;
     padding: 10px;;
     text-align: center;
     align-content: center;
     }
-    > footer{
+    footer{
         grid-area: footer;
     }
 }
 
-   // FIN DEL gridCONTACTO
-
-
-.subtitulo__contacto-principal{   //h2Contacto
-    font-size: 2.5rem;
-    margin: 0rem 0.5rem 0rem 0.5rem;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+.subtitulo__contacto-principal{
+    font-size: 3rem;
+    margin: 0rem 0.5rem;
+    padding: 0rem 1rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: underline;
-    font-weight: bold;
+    background-color: rgb(245, 245, 245);
+    border: 0.1rem solid;
+    border-radius: 1rem;
     color: $gris;
+    text-align: center;
     display: inline-block;
 }
 
-.seccion__form-contacto{   //formContacto
-    background-image: linear-gradient(to bottom, $violeta, purple);
-    margin: 2rem 30rem 2rem 30rem;
+#descripcion-contacto{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        letter-spacing: 0.1rem;
+        transform: translate(0rem, 3.5rem);
+}
+
+
+.seccion__form-contacto{
+    background-image: linear-gradient(to bottom, $gris, $violeta);
+    margin: 0rem 30rem 2rem 30rem;
     height: $medida-largo*1.5;
     display: flex;
     flex-direction: column;
@@ -89,7 +103,7 @@
 
 #genero{
     border-style: solid;
-    height: 3rem;
+    height: 3.6rem;
     width: ($medida-ancho)-0.1rem;
     border-radius: 0.2rem;
 }

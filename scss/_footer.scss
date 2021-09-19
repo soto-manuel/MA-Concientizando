@@ -84,7 +84,7 @@ footer{
     // bottom: 6.2rem;
 }
 
-@each $contenedor in contenedor-footer-uno, contenedor-footer-dos, contenedor-footer-tres {
+@each $contenedor in contenedor-footer-uno, contenedor-footer-dos{
     .#{$contenedor}{
         width: 15rem;
     }
@@ -105,14 +105,15 @@ footer{
 .contenedor-footer-tres{
     position: relative;
     bottom: 15rem;
-    left: 60rem;
 }
+
 .redes-sociales_footer{
     a{
         margin: 0rem 0.4rem;
-        border-radius: 5px;
+        border-radius: 0.5rem;
+        background-color: $gris;
         &:hover{
-            color: blue;
+            background-color: blue;
         }
         
     }

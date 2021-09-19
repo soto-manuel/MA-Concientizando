@@ -26,30 +26,24 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    > div{
+    div{
         font-size: 1.5rem;
         text-align: center;
         width: 40rem;
         height: 30rem;
-        margin: 10px;
-        transition: all 1s;        
+        margin: 2rem;
+        transition: all 1s;
         &:hover{
-            width: 42rem;
-            height: 32rem;
             font-size: 2rem;
         }
     }
 }
 
-// fin del grid gALERIA
-
 .galeria__img{
-    border: 1px solid $negro;
     width: 40rem;
     height: $medida-largo;
     transition: all 1s;
     &:hover{
-        width: 42rem;
-        height: 32rem;
+        transform: scale(1.05);
     }
 }

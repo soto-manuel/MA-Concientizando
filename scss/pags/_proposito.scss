@@ -1,41 +1,45 @@
 
 .subtitulo__h2-proposito{
-    display: inline;
-    font-size: 2.5rem;
-    margin: 0rem 0.5rem 0rem 0rem;
-    padding: 0.5rem 1rem 0.5rem 1rem;;
+    font-size: 3rem;
+    background-color: rgb(245, 245, 245);
+    display: inline-block;
+    margin: 0rem 0rem 3rem;
+    padding: 0rem 1rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: underline;
-    font-weight: bold;
     color: $gris;
+    border: 0.1rem solid;
+    border-radius: 1rem;
+    letter-spacing: 0.2rem;
+    transform: translate(15rem, 5rem);
 }
 
 .articulo__parrafos{
+    section{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    }
 }
 
-.parrafo-azul{
+.parrafo-gris{
     font-size: 2rem;
-    margin: 1rem 1rem 1rem 1.5rem;
+    color: white;
+    margin: 1rem 7rem;
     padding: 0.5rem;
     width: $medida-ancho*2;
-    height: ($medida-largo)-14rem;
-    background-color: lightblue;
-    border-radius: 1.5rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    transform: translate(10rem, 1rem);
-}
-
-.parrafo-rosita{
-    @extend .parrafo-azul;
-    background-color: lightcoral;
+    height: ($medida-largo)-10rem;
+    background-color: $gris;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     align-self: flex-end;
-    transform: translate(-10rem, 1rem);
+    text-align: center;
+    p{
+        height: 100%;
+        margin: 2rem 2rem;
+    }
 }
 
-.parrafo-verde{
-    @extend .parrafo-azul;
-    background-color: lightgreen;
+.parrafo-violeta{
+    @extend .parrafo-gris;
+    background-color: $violeta;
+    align-self: flex-start;
 }

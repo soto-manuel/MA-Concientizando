@@ -1,0 +1,51 @@
+.blog-cuatro{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem 15rem 2rem;
+    word-spacing: 0.1rem;
+    h2{
+        font-size: 3rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        margin: 2rem 0rem 2rem 0rem;
+    }
+    h3{
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 1rem 0rem 1rem 0rem;
+    }
+    p{
+        font-size: 1.5rem;
+        text-align: justify;
+        margin: 1rem 0rem;
+    }
+    span{
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(167, 167, 167);
+        &:hover{
+            color: $gris;
+        }
+    }
+}
+
+ul{
+    font-size: 1.5rem;
+    margin: 2rem 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    li{
+        list-style:inside;
+        margin: 1rem 0rem;
+    }
+}
+
+.footer-del-blog{
+    text-align: center;
+    h4{
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 2rem 10rem;
+    }
+}
