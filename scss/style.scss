@@ -1,15 +1,9 @@
 //VARIABLES
 $medida-ancho: 30rem;
 $medida-largo: 30rem;
-$celestito-fondo: #e0ffff;
 $violeta: #9370d8;
 $gris: #26383B;
 $negro: #000000;
-
-$rojo-bordo: #812007;
-$gris-nuevo:#b2bbc0;
-$verde-claro: #4c7d24;
-$verde-oscuro: #19472b;
 
 @import "piso-bootstrap";
 @import "header";
@@ -41,11 +35,15 @@ html{
 
 #hr-separador{
     height: 1px;
-    width: 90%;
     margin: 1rem 6rem;
     opacity: 0.25;
     background-color: $gris;
 }
 
-
+#especial-blogspot{
+    position: relative;
+    left: 0rem;
+    bottom: 16rem;
+    display: inline-block;
+}
 

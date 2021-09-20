@@ -18,6 +18,15 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    div{
+        a{
+            text-decoration: none;
+            color: $gris;
+            &:hover{
+                color: white;
+            }
+        }
+    }
     }
 }
 

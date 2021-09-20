@@ -3985,10 +3985,10 @@ textarea.form-control-lg {
 }
 
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
+  padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: white;
+  background-color: #9370d8;
   border: 1px solid #889192;
   border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
@@ -4009,8 +4009,8 @@ textarea.form-control-lg {
 
 .navbar-toggler-icon {
   display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.7em;
+  height: 1.7em;
   vertical-align: middle;
   background-repeat: no-repeat;
   background-position: center;

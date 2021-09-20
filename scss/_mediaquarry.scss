@@ -1,13 +1,78 @@
-@media screen and (min-width: 440px) and (max-width: 768px){
+@media screen and (max-width: 440px){
+
+    #header__h1{
+        font-size: 4rem;
+    }
+
     
+/////////////// menu nav
+
+    nav{
+        div{
+            button{
+                span{
+                    background-color: $violeta;
+                }
+            }
+        }
+    }
+
+    .menuInicio{
+        font-size: 2rem;
+        font-weight: 500;
+        img{
+            transform: scale(0);
+        }
+    }
+    .menuTierra{
+        font-size: 2rem;
+        font-weight: 500;
+        right: 0.8rem;
+        img{
+            transform: scale(0);
+        }
+    }
+    .menuProposito{
+        font-size: 2rem;
+        font-weight: 500;
+        left: 0.2rem;
+        img{
+            transform: scale(0);
+        }
+    }
+    .menuContacto{
+        font-size: 2rem;
+        font-weight: 500;
+        right: 0.7rem;
+        img{
+            transform: scale(0);
+        }
+    }
+
+//////// FOOTER
+
+footer{
+    height: 40rem;
+}
+
+.footer__img{
+    left: 0;
+    top: 7rem;
+}
+
+.autor-derechos{
+    position: relative;
+    top: 4rem;
+}
+
     //////        INICIO/HOME
     
     .cuerpoIndex{
             display: grid;
             grid-template-areas:"header"
                                 "seccion"
-                                "costado"
                                 "seccion2"
+                                "costado"
                                 "seccion3"
                                 "seccion4"
                                 "footer";
@@ -23,37 +88,51 @@
         }
         .seccion2{
             grid-area: seccion2;
+            justify-content: center;
+        }
+        .seccion3{
+            margin: 5rem 0rem;
+            div{
+            grid-area: seccion3;
+            flex-direction: column;
+            a{
+                width: 100%;
+                }
+            }
+        }
+        .seccion4{
+            grid-area: seccion4;
         }
         #piePagina{
             grid-area: footer;
+            .contenedor-footer-uno{
+                left: 10rem;
+                top: 0rem;
+            }
+            .contenedor-footer-dos{
+                left: 10rem;
+                bottom: 0rem;
+            }
+            .contenedor-footer-cuatro{
+                bottom: 27rem;  
+                left: 11rem;
+            }
+            .autor-derechos{
+                top: 0rem;
+                transform: translate(0rem, -9rem);
+            }
         }
 
 // fin del grid
 
-
-    .menuInicio img{
-        transform: scale(0);
-    }
-    .menuTierra img{
-        transform: scale(0);
-    }
-    .menuProposito img{
-        transform: scale(0);
-    }
-    .menuContacto img{
-        transform: scale(0);
-    }
-    
     .h2Index{
-        position: relative;
-        left: 10rem;
+        font-size: 2.5rem;
     }
     #hr-separador{
         margin: 1rem 5rem;
     }
     #seccionUno{
         justify-self: center;
-        width: 58rem;
         position: relative;
         left: 0rem;
     }
@@ -61,56 +140,29 @@
         justify-self: center;
         top: 2rem;
         height: 37rem;
-    }   
-    .seccion2{
-        justify-content: center;
     }
+
+    .contenedor-blog-tres{
+        background-color: $gris;
+        color: white;
+    }
+    .contenedor-blog-cuatro{
+        background-color: white;
+        color: $gris;
+    }
+
     .seccion2__parrafo-ult{
-        font-size: 1.7rem;
+        font-size: 2rem;
         text-align: center;
-        margin: 0rem 2rem 1rem 2rem;
+        margin: 3rem 2rem 1rem 2rem;
         padding: 0;
+        top: 2rem;
     }
     .seccion2__gif-index{
         width: 70rem;
     }
 
 ////// FIN INICIO/HOME
-
-    footer{
-        height: 40rem;
-    }
-
-    .footer__img{
-        left: 0;
-        top: 7rem;
-    }
-
-    .titulo-footer-nav{
-        height: 20%;
-        left: 10rem;
-        top: 3rem;
-    }
-
-    .titulo-footer-int{
-        bottom: 10.249rem;
-        left: 46rem;
-        
-    }
-    .menu__footer{
-        height: 25%;
-        left: 10rem;
-        top: 4rem;
-    }
-    .menu__footer-segundo{
-        left: 46rem;
-        bottom: 9rem;
-    }
-
-    .autor-derechos{
-        position: relative;
-        top: 10rem;
-    }
 
 ////// TIERRA
 
@@ -123,16 +175,6 @@
         }
         .cabeza-tierra{
             grid-area: header;
-            .menu{
-                ul{
-                    display: flex;
-                    flex-flow: row nowrap;
-                    justify-content: center;
-                    li{
-                        width: 25%;
-                    }
-                }
-            }
         }
         .seccion__grid-parrafo{
             grid-area: seccion;
@@ -142,47 +184,238 @@
         }
         .footer__tierra{
             grid-area: footer; 
+            .contenedor-footer-uno{
+                top: 0rem;
+            }
+            .contenedor-footer-dos{
+                left: 10rem;
+                bottom: 0rem;
+            }
+            .contenedor-footer-cuatro{
+                left: 9rem;
+                bottom: 27rem;
+            }
         }
 
-        .blogs{
-            width: 70rem;
+        .div__cuadro-blogs{
+            padding: 0rem;
+            a{
+                width: 60rem;
+            }
         }
-        .galeria{
-            width: 70rem;
-        }
-        .retos{
-            width: 70rem;
-        }
+
 
 ///////PROPOSITO
 
 .grid-proposito{
     display: grid;
     grid-template-areas: "header"
-    "seccion"
-    "footer";
+                        "seccion"
+                        "footer";
     header{
         grid-area: header;
     }
     footer{
         grid-area: footer;
+        .contenedor-footer-uno{
+            left: 11rem;
+            top: 2rem;
+        }
+        .contenedor-footer-dos{
+            left: 45rem;
+        }
     }
 }
 .articulos__parrafos{
     grid-area: seccion;
 }
+.subtitulo__h2-proposito{
+    position: relative;
+    bottom: 4rem;
+    right: 3rem;
+}
 
-.parrafo-azul, .parrafo-rosita, .parrafo-verde{
-    width: 35rem;
+////CONTACTO
+
+.gridContacto{
+    display: grid;
+    grid-template-areas: "header"
+    "descripcion"
+    "formulario"
+    "footer";
+    header{
+        grid-area: header;
+    }
+    article{
+        grid-area: descripcion;
+    }
+    section{
+        grid-area: formulario;
+        form{
+            width: 50rem;
+        }
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+#descripcion-contacto{
+    font-size: 1.7rem;
+    position: relative;
+    top: 2rem;
+}
+
+
+
+////////////    BLOGS
+
+.body__blogs-grid{
+    display: grid;
+    grid-template-areas: "header"
+    "article"
+    "blogs"
+    "footer";
+    footer{
+        .contenedor-footer-uno{
+            left: 3rem;
+            top: 2rem;
+        }
+        .contenedor-footer-dos{
+            left: 24rem;
+        }
+    }
+}
+
+.articulo__blogs-all{
+    p{
+        width: 100%;
+    }
+}
+
+.seccionBlogs{
+    div{
+        width: 42.6rem;
+        a{
+            margin: 1rem 0rem;
+        }
+    }
+}
+
+//////////////// BLOGSpot 
+
+.blogspot{
+    grid-template-areas: "header"
+    "articulo"
+    "footer";
+    header{
+        grid-area: header;
+    }
+    article{
+        grid-area: articulo;
+        margin: 0rem 0rem;
+        h2{
+            margin: 0rem 0rem 2rem 0rem;
+            text-decoration: underline;
+            font-size: 2.5rem;
+
+        }
+        h3{
+            font-size: 1.9rem;
+            margin: 1rem 1rem;
+            text-align: center;
+        }
+        p{
+            padding: 0.5rem 0.5rem;
+            margin: 0rem 0.5rem;
+        }
+    }
+    footer{
+        grid-area: footer;
+        .contenedor-footer-uno{
+            left: 1rem;
+        }
+        .contenedor-footer-dos{
+            left: 26rem;
+        }
+    }
 }
 
 
 
 
+///////////// GALERIA DE FOTOS
+
+#bodyGaleria{
+    grid-template-areas: "header"
+                        "articulo"
+                        "seccion"
+                        "footer";
+    header{
+        grid-area: header;
+    }
+    article{
+        grid-area: articulo;
+        font-size: 1.7rem;
+    }
+    section{
+        grid-area: seccion;
+        div{
+            margin: 2rem 0rem;
+        }
+    }
+    footer{
+        grid-area: footer;
+        .contenedor-footer-uno{
+            left: 3rem;
+        }
+        .contenedor-footer-dos{
+            left: 26rem;
+        }
+    }
+}
+
 }
 
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 440px) and (max-width: 769px) {
+
+//////////// MENU NAV
+
+    .menuInicio{
+        font-size: 2rem;
+        font-weight: 500;
+        img{
+            transform: scale(0);
+        }
+    }
+    .menuTierra{
+        font-size: 2rem;
+        font-weight: 500;
+        right: 0.8rem;
+        img{
+            transform: scale(0);
+        }
+    }
+    .menuProposito{
+        font-size: 2rem;
+        font-weight: 500;
+        left: 0.2rem;
+        img{
+            transform: scale(0);
+        }
+    }
+    .menuContacto{
+        font-size: 2rem;
+        font-weight: 500;
+        right: 0.7rem;
+        img{
+            transform: scale(0);
+        }
+    }
+
+
+/////////// INICIO/INDEX
+
     .cuerpoIndex{
         display: grid;
     grid-template-areas:"header header"
@@ -200,19 +433,67 @@
     }
     .costado{
         grid-area: costado;
+        width: 35rem;
     }
     .seccion2{
         grid-area: seccion2;
+        p{
+            margin: 0rem 0rem;
+            width: 100%;
+            padding: 0rem 1rem;
+            top: 12rem;
+        }
     }
     .seccion3{
         grid-area: seccion3;
+        div{
+            flex-direction: column;
+            a{
+                width: 100%;
+            }
+        }
     }
     .seccion4{
         grid-area: seccion4;
     }
     #piePagina{
         grid-area: footer;
+        .contenedor-footer-uno{
+            nav{
+                ul{
+                    font-size: 1.7rem;
+                    margin: 2rem 0rem;
+                }
+            }
+        }
+        .contenedor-footer-dos{
+            left: 48rem;
+            bottom: 15rem;
+            nav{
+                ul{
+                    font-size: 1.7rem;
+                    margin: 2rem 0rem;
+                }
+            }
+        }
+        .contenedor-footer-cuatro{
+            transform: translate(-3rem, 0rem);
+            left: 0rem;
+            bottom: 6.79rem;
+        }
     }
+
+.contenedor-blog-tres{
+    background-color: $gris;
+    color: white;
+}
+.contenedor-blog-cuatro{
+    background-color: white;
+    color: $gris;
+}
+
+
+//////////// SECCIÓN TIERRA
 
     .grid-tierra{
         display: grid;
@@ -229,30 +510,216 @@
         }
         .seccion__grid-img{
             grid-area: articulo;
+            div{
+                padding: 0rem;
+                a{
+                    width: 100%;
+                    div{
+                        font-size: 4rem;
+                    }
+                }
+            }
         }
         .footer__tierra{
-            grid-area: footer; 
+            grid-area: footer;
+            .contenedor-footer-uno{
+                left: 7rem;
+                top: 0.99rem;
+            }
+            .contenedor-footer-dos{
+                left: 41rem;
+                bottom: 14rem;
+            }
+            .contenedor-footer-cuatro{
+                transform: translate(-3rem, 0rem);
+                left: 0rem;
+                bottom: 6.79rem;
+            }
         }
 
-        .menuInicio img{
-            transform: scale(0);
+
+////////////// PROPOSITO
+
+.grid-proposito{
+    grid-template-areas: "header header"
+    "articulo articulo"
+    "footer footer";
+    header{
+        grid-area: header;
+    }
+    article{
+        grid-area: articulo;
+        section{
+            div{
+                margin: 1rem 5rem;
+            }
         }
-        .menuTierra img{
-            transform: scale(0);
+    }
+    footer{
+        grid-area: footer;
+        .contenedor-footer-uno{
+            top: 0.99rem;
+            left: 9rem;
         }
-        .menuProposito img{
-            transform: scale(0);
+        .contenedor-footer-dos{
+            left: 45rem;
+            bottom: 14rem;
         }
-        .menuContacto img{
-            transform: scale(0);
+        .contenedor-footer-cuatro{
+            transform: translate(-3rem, 0rem);
+            left: 0rem;
+            bottom: 6.79rem;
         }
+    }
+}
+
+.subtitulo__h2-proposito{
+    transform: translate(9rem, 0rem);
+}
+
+////////// CONTACTO /////////////
+
+.gridContacto{
+    grid-template-areas: "header header"
+    "descripcion descripcion"
+    "formulario formulario"
+    "footer footer";
+    header{
+        grid-area: header;
+    }
+    article{
+        grid-area: descripcion;
+    }
+    section{
+        grid-area: formulario;
+        form{
+            width: 100%;
+        }
+    }
+    footer{
+        grid-area: footer;
+        .contenedor-footer-uno{
+            top: 1.19rem;
+            left: 5rem;
+        }
+        .contenedor-footer-dos{
+            left: 43rem;
+            bottom: 14rem;
+        }
+        .contenedor-footer-cuatro{
+            transform: translate(-3rem, 0rem);
+            left: 0rem;
+            bottom: 6.79rem;
+        }
+    }
+}
+
+#descripcion-contacto{
+    font-size: 1.5rem;
+    transform: translate(0rem, 6rem);
+}
+
+
+
+///////////// BLOGS ///////////////
+
+.body__blogs-grid{
+    grid-template-areas: "header header"
+    "article article"
+    "blogs blogs"
+    "footer footer";
+    article{
+        p{
+            width: 55rem;
+        }
+    }
+    section{
+        div{
+            width: 100%;
+            a{
+                width: 100%;
+                margin: 1rem 0rem;
+            }
+        }
+    }
+    footer{
+        .contenedor-footer-uno{
+            top: 1.2rem;
+        }
+        .contenedor-footer-dos{
+            left: 46rem;
+            bottom: 14rem;
+        }
+        .contenedor-footer-cuatro{
+            transform: translate(-3rem, 0rem);
+            left: 0rem;
+            bottom: 6.79rem;
+        }
+    }
+}
+
+/////////////// GALERIA DE FOTOS /////////
+
+#bodyGaleria{
+    footer{
+        .contenedor-footer-uno{
+            top: 1.19rem;
+            left: 5rem;
+        }
+        .contenedor-footer-dos{
+            left: 43rem;
+            bottom: 14rem;
+        }
+        .contenedor-footer-cuatro{
+            transform: translate(-3rem, 0rem);
+            left: 0rem;
+            bottom: 6.79rem;
+        }
+    }
+}
 
 
 
 
 }
 
-@media screen and (min-width:993px) and (max-width: 1300px){
+@media screen and (min-width:769px) and (max-width: 993px){
+
+    .menuInicio{
+        font-size: 2rem;
+        font-weight: 500;
+        img{
+            transform: scale(0);
+        }
+    }
+    .menuTierra{
+        font-size: 2rem;
+        font-weight: 500;
+        right: 0.8rem;
+        img{
+            transform: scale(0);
+        }
+    }
+    .menuProposito{
+        font-size: 2rem;
+        font-weight: 500;
+        left: 0.2rem;
+        img{
+            transform: scale(0);
+        }
+    }
+    .menuContacto{
+        font-size: 2rem;
+        font-weight: 500;
+        right: 0.7rem;
+        img{
+            transform: scale(0);
+        }
+    }
+
+/////// INDEX-INICIO
+
+
     .cuerpoIndex{
         display: grid;
     grid-template-areas:"header header header"
@@ -270,20 +737,47 @@
     }
     .costado{
         grid-area: costado;
+        width: 35rem;
     }
     .seccion2{
         grid-area: seccion2;
+        p{
+            margin: 0rem 0rem;
+            width: 100%;
+            top: 11rem;
+        }
     }
     .seccion3{
         grid-area: seccion3;
+        div{
+            a{
+                font-size: 3.5rem;
+            }
+        }
     }
     .seccion4{
         grid-area: seccion4;
     }
     #piePagina{
         grid-area: footer;
+        .contenedor-footer-uno{
+            left: 11rem;
+            top: 1.2rem;
+        }
+        .contenedor-footer-dos{
+            left: 50rem;
+            bottom: 14rem;
+        }
+        .contenedor-footer-cuatro{
+                transform: translate(-3rem, 0rem);
+                left: 0rem;
+                bottom: 6.79rem;
+        }
     }
 
+
+
+    /////////////SECCION TIERRA
 
     .grid-tierra{
         display: grid;
@@ -294,27 +788,176 @@
         }
         .cabeza-tierra{
             grid-area: header;
-            .menu{
-                ul{
-                    display: flex;
-                    flex-flow: row nowrap;
-                    justify-content: center;
-                    li{
-                        width: 25%;
-                    }
-                }
-            }
         }
         .seccion__grid-parrafo{
             grid-area: seccion;
         }
         .seccion__grid-img{
             grid-area: articulo;
+            div{
+                padding: 0rem 0rem;
+                a{
+                    width: 100%;
+                }
+            }
         }
         .footer__tierra{
             grid-area: footer; 
+            .contenedor-footer-uno{
+                left: 11rem;
+                top: 1.2rem;
+            }
+            .contenedor-footer-dos{
+                left: 50rem;
+                bottom: 14rem;
+            }
+            .contenedor-footer-cuatro{
+                transform: translate(-3rem, 0rem);
+                left: 0rem;
+                bottom: 6.79rem;
+        }
         }
 
 
+
+
+        ////////////  SECCION PROPOSITO
+
+        .grid-proposito{
+            footer{
+                .contenedor-footer-uno{
+                    top: 1.2rem;
+                    left: 15rem;
+                }
+                .contenedor-footer-dos{
+                    left: 60rem;
+                    bottom: 14rem;
+                }
+                .contenedor-footer-cuatro{
+                    transform: translate(-3rem, 0rem);
+                    left: 0rem;
+                    bottom: 6.79rem;
+            }
+            }
+        }
+
+
+    .subtitulo__h2-proposito{
+        transform: translate(20rem, 0rem);
+    }
+
+
+
+    .gridContacto{
+        footer{
+            .contenedor-footer-uno{
+                top: 1.2rem;
+                left: 16rem;
+            }
+            .contenedor-footer-dos{
+                left: 60rem;
+                bottom: 14rem;
+            }
+            .contenedor-footer-cuatro{
+                transform: translate(-3rem, 0rem);
+                left: 0rem;
+                bottom: 6.79rem;
+        }
+        }
+    }
+
+
+    /////////////// BLOGS
+
+    .body__blogs-grid{
+        section{
+            div{
+                a{
+                    width: 100%;
+                    margin: 1rem 0rem;
+                }
+            }
+        }
+        footer{
+            .contenedor-footer-uno{
+                left: 15rem;
+                top: 1.2rem;
+            }
+            .contenedor-footer-dos{
+                left: 55rem;
+                bottom: 14rem;
+            }
+            .contenedor-footer-cuatro{
+                transform: translate(-3rem, 0rem);
+                left: 0rem;
+                bottom: 6.79rem;
+        }
+        }
+    }
+
+    
+    ////////////// GALERIA DE FOTOS
+
+    #bodyGaleria{
+        footer{
+            .contenedor-footer-uno{
+                top: 1.2rem;
+                left: 2rem;
+            }
+            .contenedor-footer-dos{
+                left: 20rem;
+                bottom: 14rem;
+            }
+            .contenedor-footer-cuatro{
+                transform: translate(-3rem, 0rem);
+                left: 0rem;
+                bottom: 6.79rem;
+        }
+        }
+    }
+
+
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1500px){
+    
+
+///// INDEX
+
+.contenedor-footer-uno{
+    top: 1rem;
+}
+.contenedor-footer-dos{
+    bottom: 13rem;
+}
+
+nav{
+    ul{
+        margin: 1rem 0rem;
+    }
+}
+
+.seccion2__parrafo-ult{
+    top: 13rem;
+}
+
+.costado{
+    width: 30rem;
+}
+
+/////// PROPOSITO   
+
+.subtitulo__h2-proposito{
+    transform: translate(15rem, 2rem);
+}
+
+/////       CONTACTO  //////////////
+
+.gridContacto{
+    section{
+        width: 100%;
+    }
+}
 
 }

@@ -1,6 +1,5 @@
 footer{ 
     background-color: $violeta;
-    // height: 30rem;
     text-align: center;
     grid-area: footer;
 }
@@ -16,9 +15,6 @@ footer{
 .menu__footer{
     font-size: 1.5rem;
     display: inline;
-    // position: relative;
-    // left: 14.9rem;
-    // top: 2.2rem;
     ul{
         margin-top: 1rem;
         li{
@@ -36,19 +32,11 @@ footer{
 }
 
 .titulo-footer-nav{
-    color: white;
     display: inline;
-    // position: relative;
-    // top: 2rem;
-    // left: 15rem;
     font-weight: bold;
 }
 .titulo-footer-int{
-    color: white;
     display: inline;
-    // position: relative;
-    // left: 45rem;
-    // bottom: 11.4rem;
     font-weight: bold;
 }
 
@@ -80,8 +68,6 @@ footer{
     font-size: 1.4rem;
     font-weight: bold;
     height: 2.5rem;
-    // position: relative;
-    // bottom: 6.2rem;
 }
 
 @each $contenedor in contenedor-footer-uno, contenedor-footer-dos{
@@ -104,17 +90,38 @@ footer{
 
 .contenedor-footer-tres{
     position: relative;
-    bottom: 15rem;
+    bottom: 28rem;
+    left: 11.45rem;
+    display: inline-block;
+}
+
+.contenedor-footer-cuatro{
+    position: relative;
+    bottom: 24.79rem;
+    left: 35rem;
+    display: inline-block;
+    h3{
+        font-weight: bold;
+    }
+}
+.lista-blogs{
+    ul{
+        li{
+            list-style-type: none;  
+            a{
+                text-decoration: none;
+                color: rgb(89, 0, 255);
+                &:hover{
+                    color: rgb(62, 62, 252);
+                }
+            }
+        }
+    }
 }
 
 .redes-sociales_footer{
     a{
         margin: 0rem 0.4rem;
         border-radius: 0.5rem;
-        background-color: $gris;
-        &:hover{
-            background-color: blue;
-        }
-        
     }
 }

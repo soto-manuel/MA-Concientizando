@@ -13,9 +13,8 @@
     }
     section{
         grid-area: formulario;
-    padding: 10px;;
-    text-align: center;
-    align-content: center;
+        padding: 10px;
+        text-align: center;
     }
     footer{
         grid-area: footer;
@@ -47,7 +46,7 @@
 
 .seccion__form-contacto{
     background-image: linear-gradient(to bottom, $gris, $violeta);
-    margin: 0rem 30rem 2rem 30rem;
+    width: 90rem;
     height: $medida-largo*1.5;
     display: flex;
     flex-direction: column;

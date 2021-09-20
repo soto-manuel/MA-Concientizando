@@ -1,15 +1,13 @@
 .body__blogs-grid{
     display: grid;
-    grid-template-areas:"header header "
-                        "article article"
-                        "blogs blogs"
-                        "footer footer ";
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 0fr 0.5fr 2fr 0fr;
-    > header{
+    grid-template-areas:"header header header"
+                        "article article article"
+                        "blogs blogs blogs"
+                        "footer footer footer";
+    header{
         grid-area: header;
     }
-    > footer{
+    footer{
         grid-area: footer;
     }
 }
@@ -17,6 +15,7 @@
 .seccionBlogs{
     grid-area: blogs;
     text-align: center;
+    // height: auto;
     div{
         display: flex;
         flex-direction: column;

@@ -1,3 +1,18 @@
+.blogspot-uno{
+    grid-template-areas: "header header header"
+    "articulo articulo articulo"
+    "footer footer footer";
+    header{
+        grid-area: header;
+    }
+    article{
+        grid-area: articulo;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+
 .blog-uno{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0rem 15rem 2rem 15rem;
